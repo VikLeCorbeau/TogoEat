@@ -1,0 +1,67 @@
+// Font face
+// ==================
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Light.woff2") format("woff2");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Bold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+
+// Variables
+// ==================
+$font: "Roboto", "sans-serif";
+$font-size: 14px;
+   
+
+// Text
+// ==================
+p {
+    transition: .3s;
+}
+
+.t1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.t2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.st {
+    font-size: 12px;
+}
+
+.stl {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.do {
+    color: var(--color-dark-orange);
+}
+
+.lo {
+    color: var(--color-light-orange);
+}
+
+.dg {
+    color: var(--color-dark-grey);
+}
+
+.lg {
+    color: var(--color-light-grey);
+}

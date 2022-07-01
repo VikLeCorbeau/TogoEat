@@ -1,0 +1,27 @@
+// Generic
+// =============
+
+.icon {
+    // Font size : 14px, image
+    fill: inherit;
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
+    transition: .3s;
+    fill: inherit;
+}
+
+.icon--clickable {
+    cursor: pointer;
+}
+
+// Header
+// =============
+.icon-header:hover {
+    fill: var(--color-dark-orange);
+}
+
+// Menu
+// =============

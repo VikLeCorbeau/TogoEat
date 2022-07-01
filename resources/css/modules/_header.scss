@@ -1,0 +1,23 @@
+.header-container {
+    position: sticky;
+    z-index: 98;
+    top: 30px;
+    
+    width: 100%;
+}
+
+.header-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-search-container {
+    width: 85%;
+}
+
+.input-search {
+    font-size: 14px!important;
+}

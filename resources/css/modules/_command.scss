@@ -1,0 +1,269 @@
+.command-container {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--color-light-grey);
+}
+
+.command-wrapper {
+    height: 100%;
+    padding: 30px 30px 30px 30px;
+}
+
+.command-inner {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+// Article 
+// =============
+.command-articles-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+
+    .article-container {
+        margin-bottom: 30px;
+    }
+}
+
+.command-article-subtitle {
+    color: var(--color-dark-orange);
+    font-weight: 600;
+    font-size: 14px;
+
+    margin-top: 3px;
+}
+
+.command-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+
+    transition: .3s;
+
+    width: 20px;
+
+    fill: #FBCDA6;
+
+    &:hover {
+        fill: #F1893C;
+    }
+}
+
+// Article Quantité
+// ==================
+.command-article-qty-container {
+    display: flex;
+
+    margin-top: 5px;
+}
+
+.command-article-button {
+    cursor: pointer;
+}
+
+.command-article-quantity {
+    padding: 0 20px;
+}
+
+// Article de la commande 
+// =======================
+.top-command-container {
+    width: 100%;
+
+    padding-bottom: 30px;
+}
+
+.top-command-wrapper {
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid var(--color-dark-grey);
+}
+
+.top-command-subtitle {
+    color: var(--color-dark-grey);
+    margin-top: 5px;
+}
+
+.command-buttons-container {
+
+    padding-top: 30px;
+    
+    .basic-button {
+        margin-top: auto;
+    }
+}
+
+
+// Command Edit 
+// =============
+.command-edit-container {
+    position: fixed;
+    top: -100%;
+    z-index: 99;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: .5s;
+    
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+
+    overflow-y: scroll;
+
+    background-color: #fff;
+
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+
+        top: 0;
+    }
+}
+
+.command-edit-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    max-height: 100vh;
+}
+
+.command-edit-close-container {
+    position: absolute;
+    right: 30px; top: 60px;
+}
+
+.command-edit-close-icon {
+    width: 12px;
+
+    transition: .3s;
+
+    &:hover {
+        fill: var(--color-dark-orange);
+    }
+}
+
+// States
+// ===========
+.command-state-main-container {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+}
+
+.command-edit-main-container {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+
+    &.edit-command {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.command-edit-top-container {
+    margin-top: 130px;
+}
+
+.command-edit-title  {
+    width: 100%;
+    text-align: center;
+
+    color: var(--color-dark-orange);
+}
+
+.command-menus-container {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+.command-menu-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+    background-color: var(--color-light-grey);
+    border-radius: 20px;
+
+    &:hover, &.active {
+        background-color: var(--color-dark-orange);
+        color: #fff;
+
+        .command-menu-icon {
+            fill: #fff;
+        }
+    }
+}
+
+.command-wrapper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.command-menu-icon {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    fill: var(--color-black);
+
+    width: auto;
+    height: 30%;
+}
+
+.command-menu-title {
+    position: absolute;
+    bottom: 10%; left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    font-size: 12px;
+}
+
+// Edit 
+// =============
+.command-edit-top-informations {
+    font-weight: 600;
+    font-size: 16px;
+
+    text-align: center;
+
+    margin-top: 5px;
+}
+
+.edit-artciles-container {
+    margin-bottom: 60px;
+}

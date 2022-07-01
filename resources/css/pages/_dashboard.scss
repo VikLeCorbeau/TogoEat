@@ -1,0 +1,173 @@
+.dashboard-container {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+
+    width: 100%;
+}
+
+.dashboard-part-container {
+    position: relative;
+    width: 100%;
+
+    margin-bottom: 60px;
+}
+
+// Balance
+// ==============
+.balance-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.balance-data-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-light-grey);
+    padding: 15px 30px;
+    border-radius: 20px;
+
+    width: 100%;
+}
+
+.balance-result {
+    margin-bottom: 5px;
+}
+
+.balance-illustration {
+    width: 28%;
+}
+
+.balance-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    margin-top: 20px;
+}
+
+// Menu
+// ===========
+.dashboard-menus-container {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+
+.dashboard-menu-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+
+    background-color: var(--color-light-grey);
+    border-radius: 20px;
+
+    &:hover {
+        color: var(--color-dark-orange);
+
+        .dashboard-menu-icon {
+            fill: var(--color-dark-orange);
+        }
+    }
+
+}
+
+.dashboard-wrapper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.dashboard-menu-icon {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    fill: var(--color-black);
+
+    width: auto;
+    height: 30%;
+}
+
+.dashboard-menu-title {
+    position: absolute;
+    bottom: 10%; left: 50%;
+    transform: translateX(-50%);
+}
+
+// Employés
+// ===========
+.dashboard-employees-container {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+.dashboard-employee-container {
+
+}
+
+.dashboard-employee-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+
+    border-radius: 20px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        border-radius: 20px;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 12px;
+        right: 15px;
+
+        width: 12px;
+        fill: #fff;
+    }
+}
+
+.dashboard-employee-informations-container {
+    width: 100%;
+    text-align: center;
+
+    margin-top: 10px;
+}

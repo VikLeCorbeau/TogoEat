@@ -1,0 +1,91 @@
+// Variables
+// ==================
+:root {
+    --color-black: #1B1B1B;
+    --color-light-grey: #F5F5F5;
+    --color-dark-grey: #C0C0C0;
+    --color-light-orange: #FBCDA6;
+    --color-dark-orange: #F1893C;
+
+    --color-error: #ff0033;
+    --color-success: #28a745;
+
+    --background: #fff;
+    --background-module: #f5f5f5;
+
+    --base-width: 1100px;
+}
+
+.base-container {
+    position: relative;
+
+    width: 100%;
+    max-width: calc(var(--base-width) + 2*30px );
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.base-wrapper {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+.base-wrapper--grid {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 30px;
+
+    width: 100%;
+}
+
+.content-container {
+    width: 100%;
+
+    padding: 95px 0;
+}
+
+// Outils
+// ==================
+@import 'tools/reset';
+@import 'tools/typography';
+@import 'tools/icons';
+@import 'tools/inputs-buttons';
+
+
+// Generic
+// ==================
+body {
+    font-family: $font;
+    font-size: $font-size;
+    color: var(--color-black);
+    line-height: 1.2;
+
+    background: var(--background);
+    scroll-margin: 100px 0 0 0;
+    word-break: break-word;
+}
+
+// Modules
+// ==================
+@import 'modules/header';
+@import 'modules/menus';
+@import 'modules/article';
+@import 'modules/command';
+
+
+// Pages
+// ==================
+@import 'pages/items';
+@import 'pages/dashboard';
+@import 'pages/edit-add';
+@import 'pages/access';
+
+// Media Queries
+@import 'media_queries/mobile';

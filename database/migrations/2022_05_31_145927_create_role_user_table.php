@@ -1,0 +1,36 @@
+<?php
+
+use App\Models\Role;
+use App\Models\User;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateRoleUserTable extends Migration
+{
+    /**
+     * Run the migrations.
+     * Create new table that links user table and role table via their id.
+     * Each user id is associated with one or more roles id. 
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('role_user', function (Blueprint $table) {
+            $table->primary(['user_id', 'role_id']);
+            $table->foreignIdFor(User::class);
+            $table->foreignIdFor(Role::class);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('role_user');
+    }
+}

@@ -1,0 +1,187 @@
+// Form
+// ========
+.basic-form {
+    width: 100%;
+
+    input, select {
+        margin-bottom: 10px;
+    }
+}
+
+// Select
+// =============
+.basic-select {
+
+    position: relative;
+
+    select {
+    
+        width: 100%;
+
+        padding: 9px 25px;
+        border-radius: 5px;
+    
+        background-color: var(--color-light-grey);
+        color: var(--color-dark-grey);
+    
+        font-size: 12px;
+
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    &::after {
+        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 4"%3E%3Cpath fill="silver" d="M4.25061 2.6619 6.97341.0485182c.06721-.0656472.17818-.0640842.24696.003126L7.69865.51899c.06878.06721.07034.176622.00313.242269L4.37722 3.95296c-.03439.03439-.08128.05002-.12661.04689-.04689.00157-.09222-.01406-.1266-.04689L.799446.761259C.732236.695612.733799.5862.802572.51899L1.28086.0516442c.06877-.0672102.17975-.0687732.24696-.003126L4.25061 2.6619Z"/%3E%3C/svg%3E%0A');
+        width: 8px;
+
+        position: absolute;
+        top: 6px;
+        right: 25px;
+    }
+    
+}
+
+
+// Inputs
+// ============
+.basic-input {
+    width: 100%;
+
+    padding: 9px 25px;
+    border-radius: 5px;
+
+    background-color: var(--color-light-grey);
+    color: var(--color-dark-grey);
+
+    font-size: 12px;
+}
+
+// Boutons
+// ===========
+
+.basic-button {
+    display: block;
+    cursor: pointer;
+    
+    width: 100%;
+
+    padding: 9px 25px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    text-align: center;
+    font-size: 12px;
+
+    transition: .3s;
+}
+
+.button--dark {
+    background-color: var(--color-black);
+    color: #fff;
+
+    &:hover {
+        color: var(--color-black);
+        background-color: transparent;
+        border-color: var(--color-black);
+    }
+}
+
+.button--light {
+    background-color: transparent;
+    color: var(--color-black);
+    border-color: var(--color-black);
+
+    &:hover {
+        color: #fff;
+        background-color: var(--color-black);
+        border-color: transparent;
+    }
+}
+
+.button--orange {
+    background-color: var(--color-dark-orange);
+    color: #fff;
+    border-color: transparent;
+}
+
+// Checkbox
+// ===========
+.basic-checkbox {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    font-size: 12px;
+
+    label {
+
+    }
+
+    input {
+        margin: 0;
+    }
+
+    span {
+        margin-left: 3px;
+    }
+}
+
+// Action 
+// ==============
+
+.action-container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    cursor: pointer;
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.action-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: var(--color-light-grey);
+
+    border-radius: 100%;
+}
+
+
+.action-text {
+    color: var(--color-dark-grey);
+    margin-left: 15px;
+}
+
+.icon-action {
+    fill: var(--color-dark-grey);
+    height: 13px;
+}
+
+.action-container:hover {
+    .icon-action {
+        fill: var(--color-dark-orange);
+    }
+
+    .action-text {
+        color: var(--color-dark-orange);
+    }
+}

@@ -1,0 +1,185 @@
+@media screen and (max-width: 1050px)
+{
+    // Article
+    // =============
+    .articles-container.sixth {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    // Dashboard
+    // ===============
+    .dashboard-menus-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 870px)
+{
+    .base-container {
+        max-width: calc(var(--base-width) + 40px);
+        padding: 0 20px;
+    }
+
+    .menu-container {
+        width: 400px;
+    }
+    
+    .menu-exit {
+        width: calc(100% - 400px);
+    }
+
+    .header-search-container {
+        width: 80%;
+    }
+
+    .content-container {
+        padding: 65px 0;
+    }
+
+    // Article
+    // =============
+
+    .articles-container {
+        margin: 30px 0;
+        grid-gap: 20px;
+    }
+
+    .articles-container.third {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articles-container.sixth {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .articles-container.second {
+        grid-template-columns: 1fr;
+    }
+
+    // Access
+    // ==========
+    .access-container {
+        // top: 115px;
+        // transform: translate(-50%, 0);
+        display: block;
+    }
+
+    .access-right-part {
+        display: none;
+    }
+
+
+    // Dashboard
+    // ==============
+    .dashboard-container {
+        display: block;
+    }
+
+    .dashboard-employees-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    // Articles Categories
+    // ===================
+    // .items-categorie-container {
+    //     padding: 5px 10px;
+    // }
+
+    // .items-categorie-icon {
+    //     width: 12px;
+    //     height: 12px;
+    // }
+
+    // .items-categorie-text {
+    //     font-size: 10px;
+    // }
+    
+
+    // Make Order
+    // ===========
+    .base-wrapper--grid {
+        grid-template-columns: 66% 33%;
+        grid-column-gap: 20px;
+    }
+
+    .article-command {
+
+        .product {
+            padding-top: 100%;
+            
+        }
+
+        .article-informations-container {
+            text-align: center;
+            //font-size: 12px;
+        }
+
+        img {
+            border-radius: 100%;
+        }
+
+        .command-article-qty-container {
+            justify-content: space-around;
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+
+    .menu-container {
+        width: 300px;
+    }
+    
+    .menu-exit {
+        width: calc(100% - 300px);
+    }
+
+    .menu-wrapper {
+        padding: 30px 20px;
+    }
+
+    .menu-actions-container {
+        margin-top: 30px;
+    }
+
+    .action-container {
+        margin-bottom: 12px;
+    }
+
+    .header-search-container {
+        width: 75%;
+    }
+
+
+    // Make Order
+    // ===========
+    .command-container {
+    }
+
+    .command-wrapper {
+        padding: 30px 10px; 
+    }
+
+    .top-command-container {
+        .t1 {
+            font-size: 20px;
+        }
+
+        .top-command-subtitle {
+            //font-size: 1px;
+        }
+    }
+
+    .article-command {
+        font-size: 12px;
+    }
+
+    .button-command {
+        padding: 9px 12px;
+    }
+
+}
